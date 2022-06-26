@@ -34,12 +34,12 @@ class CreateTask extends React.Component {
                 <form>
                     <div className="form-group">
                         <label>Enter Name</label>
-                        <input type="text" name="name" onChange={this.handleInputChange}/>
+                        <input type="text" name="name" value={this.props.name} onChange={this.handleInputChange}/>
 
                     </div>
                     <div className="form-group">
                         <label>Enter id</label>
-                        <input type="number" name="id" onChange={this.handleInputChange}/>
+                        <input type="number" name="id" value={this.props.id} onChange={this.handleInputChange}/>
                     </div>
                     <div className="form-group">
                         <input type="button" value="Create task" onClick={this.CreateTask}/>
